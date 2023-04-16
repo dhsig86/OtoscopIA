@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>OTOSCOP-I.A</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Otoscop-I.A</h1>
+    <div class="form-group">
+      <input type="file" id="imageUpload">
+      <label for="imageUpload">Escolha uma imagem</label>
+    </div>
+    <div class="card-container">
+      <button type="button" onclick="classify()">Classificar Imagem</button>
+      <div class="card">
+        <div class="card-header">
+          <h2>Resultado</h2>
+        </div>
+        <div class="card-body">
+          <div id="image-container"></div>
+          <div id="label-container"></div>
+        </div>
+      </div>
+    </div>
+    <footer>Produced by Dr. Dario Hart</footer>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
